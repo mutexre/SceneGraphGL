@@ -75,9 +75,9 @@
 		922D26521EA7F80A00453248 /* Surface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Surface.hpp; sourceTree = "<group>"; };
 		922D26531EA7F80A00453248 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
 		922D26541EA7F80A00453248 /* Texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
-		922D26911EA7F97E00453248 /* createDebugHelper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = createDebugHelper.py; path = Debug/createDebugHelper.py; sourceTree = "<group>"; };
-		922D26921EA7F97E00453248 /* DebugHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DebugHelper.hpp; path = Debug/DebugHelper.hpp; sourceTree = "<group>"; };
-		922D26931EA7F97E00453248 /* gl.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = gl.xml; path = Debug/gl.xml; sourceTree = "<group>"; };
+		922D26911EA7F97E00453248 /* createDebugHelper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = createDebugHelper.py; sourceTree = "<group>"; };
+		922D26921EA7F97E00453248 /* DebugHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DebugHelper.hpp; sourceTree = "<group>"; };
+		922D26931EA7F97E00453248 /* gl.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gl.xml; sourceTree = "<group>"; };
 		922D26BF1EA8089800453248 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		922D26C11EA808AD00453248 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		922D26C31EA8E84200453248 /* Platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Platform.hpp; sourceTree = "<group>"; };
@@ -86,14 +86,14 @@
 		922D272A1EA910E000453248 /* SceneGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneGraph.framework; path = "../../../Library/Developer/Xcode/DerivedData/SG-cvyaihnwxcrjzzdttabsjgcbxcch/Build/Products/Debug/SceneGraph.framework"; sourceTree = "<group>"; };
 		922D272E1EA924E500453248 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		922D272F1EA924E500453248 /* SceneGraphGL Framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SceneGraphGL Framework.h"; sourceTree = "<group>"; };
-		922D2E6A1EAB538C00453248 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = Node/Camera.cpp; sourceTree = "<group>"; };
-		922D2E6B1EAB538C00453248 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Camera.hpp; path = Node/Camera.hpp; sourceTree = "<group>"; };
-		922D2E6C1EAB538C00453248 /* Light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Light.cpp; path = Node/Light.cpp; sourceTree = "<group>"; };
-		922D2E6D1EAB538C00453248 /* Light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Light.hpp; path = Node/Light.hpp; sourceTree = "<group>"; };
-		922D2E6E1EAB538C00453248 /* MeshNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MeshNode.cpp; path = Node/MeshNode.cpp; sourceTree = "<group>"; };
-		922D2E6F1EAB538C00453248 /* MeshNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MeshNode.hpp; path = Node/MeshNode.hpp; sourceTree = "<group>"; };
-		922D2E701EAB538C00453248 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = Node/Node.cpp; sourceTree = "<group>"; };
-		922D2E711EAB538C00453248 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Node/Node.hpp; sourceTree = "<group>"; };
+		922D2E6A1EAB538C00453248 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		922D2E6B1EAB538C00453248 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		922D2E6C1EAB538C00453248 /* Light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Light.cpp; sourceTree = "<group>"; };
+		922D2E6D1EAB538C00453248 /* Light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Light.hpp; sourceTree = "<group>"; };
+		922D2E6E1EAB538C00453248 /* MeshNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshNode.cpp; sourceTree = "<group>"; };
+		922D2E6F1EAB538C00453248 /* MeshNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeshNode.hpp; sourceTree = "<group>"; };
+		922D2E701EAB538C00453248 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		922D2E711EAB538C00453248 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 		922D26001EA7F70700453248 = {
 			isa = PBXGroup;
 			children = (
-				922D26291EA7F80A00453248 /* Source */,
+				922D26291EA7F80A00453248 /* SceneGraphGL */,
 				922D26221EA7F80A00453248 /* Platform */,
 				922D260D1EA7F77700453248 /* Products */,
 				922D26BE1EA8089800453248 /* Frameworks */,
@@ -135,7 +135,7 @@
 			path = platform;
 			sourceTree = "<group>";
 		};
-		922D26291EA7F80A00453248 /* Source */ = {
+		922D26291EA7F80A00453248 /* SceneGraphGL */ = {
 			isa = PBXGroup;
 			children = (
 				922D2E4F1EAA428000453248 /* Node */,
@@ -157,7 +157,6 @@
 				922D26321EA7F80A00453248 /* Helper.hpp */,
 				922D26311EA7F80A00453248 /* Helper.cpp */,
 			);
-			name = Source;
 			path = SceneGraphGL;
 			sourceTree = "<group>";
 		};
@@ -196,7 +195,7 @@
 				922D26911EA7F97E00453248 /* createDebugHelper.py */,
 				922D26931EA7F97E00453248 /* gl.xml */,
 			);
-			name = Debug;
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		922D26BE1EA8089800453248 /* Frameworks */ = {
@@ -233,7 +232,7 @@
 				922D2E6F1EAB538C00453248 /* MeshNode.hpp */,
 				922D2E6E1EAB538C00453248 /* MeshNode.cpp */,
 			);
-			name = Node;
+			path = Node;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
