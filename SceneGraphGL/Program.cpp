@@ -229,11 +229,11 @@ void Program::load(const Source& src)
         link(id);
     }
     catch (const runtime_error& err) {
-        LOGW("vertex shader: %s", src.vertex.c_str());
-        LOGW("fragment shader: %s", src.fragment.c_str());
+        LOGW("vertex shader: %s\n", src.vertex.c_str());
+        LOGW("fragment shader: %s\n", src.fragment.c_str());
         throw runtime_error(string("failed to link program: ") + err.what());
     }
-    LOGD("program linked");
+    LOGD("program linked\n");
 
     program = id;
 

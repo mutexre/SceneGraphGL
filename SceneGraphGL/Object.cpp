@@ -11,7 +11,7 @@ shared_ptr<SG::GL::Context> Object::getGlContext() const {
     return static_pointer_cast<GL::Context>(context);
 }
 
-Context::API Object::getAPI() const {
+API Object::getAPI() const {
     return getGlContext()->getAPI();
 }
 

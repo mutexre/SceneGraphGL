@@ -7,11 +7,6 @@ namespace SG::GL
 {
     class Context : public SG::Context
     {
-    public:
-        enum class API {
-            CoreProfile, ES
-        };
-    
     private:
         API api;
         int version[2];

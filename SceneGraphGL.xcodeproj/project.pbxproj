@@ -44,6 +44,7 @@
 		922D2E771EAB538C00453248 /* MeshNode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D2E6F1EAB538C00453248 /* MeshNode.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D2E781EAB538C00453248 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D2E701EAB538C00453248 /* Node.cpp */; };
 		922D2E791EAB538C00453248 /* Node.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D2E711EAB538C00453248 /* Node.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		92D44D931F8B1CDF005204DB /* Types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 92D44D921F8B1CDF005204DB /* Types.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		922D2E6F1EAB538C00453248 /* MeshNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeshNode.hpp; sourceTree = "<group>"; };
 		922D2E701EAB538C00453248 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
 		922D2E711EAB538C00453248 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		92D44D921F8B1CDF005204DB /* Types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Types.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				922D26901EA7F94300453248 /* Debug */,
 				922D26471EA7F80A00453248 /* SceneGraphGL.hpp */,
 				922D26C31EA8E84200453248 /* Platform.hpp */,
+				92D44D921F8B1CDF005204DB /* Types.hpp */,
 				922D262D1EA7F80A00453248 /* Context.hpp */,
 				922D262C1EA7F80A00453248 /* Context.cpp */,
 				922D26421EA7F80A00453248 /* Object.hpp */,
@@ -251,6 +254,7 @@
 				922D2E731EAB538C00453248 /* Camera.hpp in Headers */,
 				922D2E751EAB538C00453248 /* Light.hpp in Headers */,
 				922D2E771EAB538C00453248 /* MeshNode.hpp in Headers */,
+				92D44D931F8B1CDF005204DB /* Types.hpp in Headers */,
 				922D26711EA7F80A00453248 /* Program.hpp in Headers */,
 				922D27311EA924E500453248 /* SceneGraphGL Framework.h in Headers */,
 				922D26691EA7F80A00453248 /* Mesh.hpp in Headers */,

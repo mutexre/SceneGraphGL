@@ -249,7 +249,7 @@ void Texture::setImage(unsigned level, const shared_ptr<Image>& image)
              level);
 }
 
-void Texture::setImages(const vector<shared_ptr<Image3D>>& images)
+void Texture::setImages(const vector<shared_ptr<ImageStack>>& images)
 {
     GLenum target = convertType(type);
     glDeleteTextures(1, &texture);

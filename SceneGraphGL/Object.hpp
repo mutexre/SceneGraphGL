@@ -10,7 +10,7 @@ namespace SG::GL
     public:
         shared_ptr<GL::Context> getGlContext() const;
         
-        Context::API getAPI() const;
+        API getAPI() const;
         int getVersion(int) const;
     
         bool isCoreProfileOrES3() const;

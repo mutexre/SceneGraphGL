@@ -30,13 +30,14 @@ namespace SG::GL
 #include <SceneGraphGL/Platform.hpp>
 
 #if DEBUG
-    #include <SceneGraphGL/Debug/DebugHelper.hpp>
+    #include <SceneGraphGL/DebugHelper.hpp>
 #endif
 
+#include <SceneGraphGL/Types.hpp>
 #include <SceneGraphGL/Helper.hpp>
 #include <SceneGraphGL/Context.hpp>
 #include <SceneGraphGL/Object.hpp>
-#include <SceneGraphGL/Surface/Texture.hpp>
+#include <SceneGraphGL/Texture.hpp>
 #include <SceneGraphGL/Scene.hpp>
 #include <SceneGraphGL/Node.hpp>
 #include <SceneGraphGL/MeshNode.hpp>
@@ -44,10 +45,10 @@ namespace SG::GL
 #include <SceneGraphGL/Camera.hpp>
 #include <SceneGraphGL/Mesh.hpp>
 #include <SceneGraphGL/Program.hpp>
-#include <SceneGraphGL/Surface/Surface.hpp>
-#include <SceneGraphGL/Surface/Renderbuffer.hpp>
-#include <SceneGraphGL/Surface/OffScreenBuffer.hpp>
-#include <SceneGraphGL/Material/TextureMaterialYUV.hpp>
+#include <SceneGraphGL/Surface.hpp>
+#include <SceneGraphGL/Renderbuffer.hpp>
+#include <SceneGraphGL/OffScreenBuffer.hpp>
+#include <SceneGraphGL/TextureMaterialYUV.hpp>
 
 #if defined(__APPLE__) && defined(__OBJC__)
     #if TARGET_OS_IPHONE || TARGET_OS_SIMULATOR

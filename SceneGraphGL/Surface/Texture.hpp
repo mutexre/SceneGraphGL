@@ -23,7 +23,7 @@ namespace SG::GL
 
     protected:
         virtual void setImages(const vector<shared_ptr<Image>> &) override;
-        virtual void setImages(const vector<shared_ptr<Image3D>> &) override;
+        virtual void setImages(const vector<shared_ptr<ImageStack>> &) override;
 
         void setImage(unsigned level, PixelFormat, const shared_ptr<Image> &);
         void setImage(unsigned level, const shared_ptr<Image> &);

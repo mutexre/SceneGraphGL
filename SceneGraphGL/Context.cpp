@@ -19,7 +19,7 @@ Context::Context(OS os, API api, int majorVersion, int minorVersion)
         fetchMaxMSAASamples();
 }
 
-Context::API Context::getAPI() const {
+API Context::getAPI() const {
     return api;
 }
 
@@ -48,13 +48,14 @@ shared_ptr<SG::Program>
 Context::loadProgram(const char* vertexShaderName,
                      const char* fragmentShaderName)
 {
-    LOGI("loadProgram: %s, %s", vertexShaderName, fragmentShaderName);
+    LOGI("loadProgram: %s, %s\n", vertexShaderName, fragmentShaderName);
+    
     auto programSrc = readProgramSource(vertexShaderName, fragmentShaderName);
     if (!programSrc)
         return nullptr;
 
     auto program = make_shared<SG::GL::Program>(programSrc.value);
-    LOGI("program loaded: %s, %s", vertexShaderName, fragmentShaderName);
+    LOGI("program loaded: %s, %s\n", vertexShaderName, fragmentShaderName);
     
     return program;
 }
