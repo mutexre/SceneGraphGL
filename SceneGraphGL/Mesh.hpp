@@ -20,7 +20,7 @@ namespace SG::GL
          };
 
          struct {
-             Buf indices, coords, normals, uvs;
+             Buf indices, coords, normals, colors, uvs;
          }
          buffers;
 
@@ -42,6 +42,7 @@ namespace SG::GL
          virtual Mesh& setPrimitivesType(PrimitivesType) override;
 
          virtual Mesh& enableNormalsArray(bool = true) override;
+         virtual Mesh& enableColorsArray(bool = true) override;
          virtual Mesh& enableUVsArray(bool = true) override;
 
          virtual void update() override;

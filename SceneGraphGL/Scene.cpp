@@ -17,7 +17,10 @@ void Scene::setLightsOnGPU(const shared_ptr<SG::Program>& program, const mat4& v
 {
     auto iter = lights.begin();
     int i = 0;
-    while (iter != lights.end() && i < lightCount) {
+    auto lightCount = std::min(size_t(3), lights.size());
+    
+    while (iter != lights.end() && i < lightCount)
+    {
         auto& light = *iter;
         if (light->isEnabled()) {
             auto worldView = viewMatrix * light->getWorldMatrix();

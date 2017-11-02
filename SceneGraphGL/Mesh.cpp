@@ -20,6 +20,7 @@ void Mesh::setupGlObjects()
     glGenBuffers(1, &buffers.indices.id);
     glGenBuffers(1, &buffers.coords.id);
     glGenBuffers(1, &buffers.normals.id);
+    glGenBuffers(1, &buffers.colors.id);
     glGenBuffers(1, &buffers.uvs.id);
 
     glBindVertexArray(vao);
@@ -39,6 +40,14 @@ void Mesh::setupGlObjects()
         auto location = program->getVertexAttributeLocation("normal");
         glBindBuffer(GL_ARRAY_BUFFER, buffers.normals.id);
         glVertexAttribPointer(location, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+        glEnableVertexAttribArray(location);
+    }
+    
+    if (program->isVertexAttributeActive("color"))
+    {
+        auto location = program->getVertexAttributeLocation("color");
+        glBindBuffer(GL_ARRAY_BUFFER, buffers.colors.id);
+        glVertexAttribPointer(location, 4, GL_FLOAT, GL_FALSE, 0, nullptr);
         glEnableVertexAttribArray(location);
     }
 
@@ -88,7 +97,12 @@ void Mesh::update()
         updateBuffer(buffers.normals, data.normals.data(), data.normals.size() * sizeof(vec3));
         valid.normals = true;
     }
-    
+
+    if (enabled.colors && !valid.colors) {
+        updateBuffer(buffers.colors, data.colors.data(), data.colors.size() * sizeof(vec4));
+        valid.colors = true;
+    }
+
     if (enabled.uvs && !valid.uvs) {
         updateBuffer(buffers.uvs, data.uvs.data(), data.uvs.size() * sizeof(vec2));
         valid.uvs = true;
@@ -114,6 +128,7 @@ Mesh::~Mesh()
     glDeleteBuffers(1, &buffers.indices.id);
     glDeleteBuffers(1, &buffers.coords.id);
     glDeleteBuffers(1, &buffers.normals.id);
+    glDeleteBuffers(1, &buffers.colors.id);
     glDeleteBuffers(1, &buffers.uvs.id);
 }
 
@@ -129,6 +144,21 @@ Mesh& Mesh::enableNormalsArray(bool enable)
     SG::Mesh::enableNormalsArray(enable);
     
     auto location = program->getVertexAttributeLocation("normal");
+    
+    bind();
+    if (enable)
+        glEnableVertexAttribArray(location);
+    else
+        glDisableVertexAttribArray(location);
+    
+    return *this;
+}
+
+Mesh& Mesh::enableColorsArray(bool enable)
+{
+    SG::Mesh::enableColorsArray(enable);
+    
+    auto location = program->getVertexAttributeLocation("color");
     
     bind();
     if (enable)
@@ -156,7 +186,8 @@ Mesh& Mesh::enableUVsArray(bool enable)
 
 GLenum Mesh::convertPrimitivesType(PrimitivesType pType)
 {
-    switch (pType) {
+    switch (pType)
+    {
         case PrimitivesType::points:
             return GL_POINTS;
         
