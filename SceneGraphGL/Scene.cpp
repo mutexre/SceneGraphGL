@@ -22,7 +22,8 @@ void Scene::setLightsOnGPU(const shared_ptr<SG::Program>& program, const mat4& v
     while (iter != lights.end() && i < lightCount)
     {
         auto& light = *iter;
-        if (light->isEnabled()) {
+        if (light->isEnabled())
+        {
             auto worldView = viewMatrix * light->getWorldMatrix();
             vec4 pos = worldView * vec4(0.f, 0.f, 0.f, 1.f);
             vec3 dir = normalize(mat3(worldView) * light->getDirection());

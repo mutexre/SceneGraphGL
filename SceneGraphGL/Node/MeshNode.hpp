@@ -7,8 +7,5 @@ namespace SG::GL
 {
     class MeshNode : public SG::MeshNode,
                      public Node
-    {
-    public:
-        MeshNode();
-    };
+    {};
 }

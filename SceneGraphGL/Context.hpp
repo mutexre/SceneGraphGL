@@ -14,8 +14,8 @@ namespace SG::GL
     protected:
         void fetchMaxMSAASamples();
         
-        virtual shared_ptr<SG::Program> loadProgram(const char* vertexShaderName,
-                                                    const char* fragmentShaderName) override;
+        virtual shared_ptr<SG::Program> loadProgram(const string& vertexShaderName,
+                                                    const string& fragmentShaderName) override;
         
         virtual shared_ptr<SG::Program> cloneProgram(const char* name) override;
         

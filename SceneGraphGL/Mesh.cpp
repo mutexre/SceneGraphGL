@@ -115,11 +115,10 @@ void Mesh::bind() {
 
 void Mesh::draw()
 {
-    if (!directMode.enabled) {
+    if (!directMode.enabled)
         glDrawElements(mode, GLsizei(data.indices.size()), indicesType, nullptr);
-    } else {
+    else
         glDrawArrays(mode, 0, data.coords.size());
-    }
 }
 
 Mesh::~Mesh()

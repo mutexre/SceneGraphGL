@@ -42,36 +42,42 @@ namespace SG
             switch (error) {
                 case GL_NO_ERROR:
                     break;
+                
                 case GL_INVALID_ENUM:
                     LOGE("OpenGL error: GL_INVALID_ENUM: %s\n", msg);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_ENUM: ") + msg);
                 #endif
                     break;
+                
                 case GL_INVALID_VALUE:
                     LOGE("OpenGL error: GL_INVALID_VALUE: %s\n", msg);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_VALUE: ") + msg);
                 #endif
                     break;
+                
                 case GL_INVALID_OPERATION:
                     LOGE("OpenGL error: GL_INVALID_OPERATION: %s\n", msg);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_OPERATION: ") + msg);
                 #endif
                     break;
+                
                 case GL_OUT_OF_MEMORY:
                     LOGE("OpenGL error: GL_OUT_OF_MEMORY: %s\n", msg);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_OUT_OF_MEMORY: ") + msg);
                 #endif
                     break;
+                
                 case GL_INVALID_FRAMEBUFFER_OPERATION:
                     LOGE("OpenGL error: GL_INVALID_FRAMEBUFFER_OPERATION: %s, %s\n", msg, state);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_FRAMEBUFFER_OPERATION: ") + msg);
                 #endif
                     break;
+                
                 default:
                     LOGE("OpenGL error %u: %s\n", error, msg);
                 #ifdef NDEBUG
@@ -89,12 +95,10 @@ namespace SG
                 
                 case GL_INVALID_ENUM:
                     LOGE("OpenGL error: GL_INVALID_ENUM at %s:%d\n", file, line);
-                
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_ENUM: ") + file + ":" + to_string(line));
                 #endif
-                
-                break;
+                    break;
                 
                 case GL_INVALID_VALUE:
                     LOGE("OpenGL error: GL_INVALID_VALUE at %s:%d\n", file, line);
@@ -102,24 +106,28 @@ namespace SG
                     throw runtime_error(string("OpenGL error: GL_INVALID_VALUE: ") + file + ":" + to_string(line));
                 #endif
                     break;
+                
                 case GL_INVALID_OPERATION:
                     LOGE("OpenGL error: GL_INVALID_OPERATION at %s:%d\n", file, line);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_OPERATION: ") + file + ":" + to_string(line));
                 #endif
                     break;
+                
                 case GL_OUT_OF_MEMORY:
                     LOGE("OpenGL error: GL_OUT_OF_MEMORY: at %s:%d\n", file, line);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_OUT_OF_MEMORY: ") + file + ":" + to_string(line));
                 #endif
                     break;
+                
                 case GL_INVALID_FRAMEBUFFER_OPERATION:
                     LOGE("OpenGL error: GL_INVALID_FRAMEBUFFER_OPERATION:  at %s:%d\n", file, line);
                 #ifdef NDEBUG
                     throw runtime_error(string("OpenGL error: GL_INVALID_FRAMEBUFFER_OPERATION: ") + file + ":" + to_string(line));
                 #endif
                     break;
+                
                 default:
                     LOGE("OpenGL error %u: at %s:%d\n", error, file, line);
                 #ifdef NDEBUG
@@ -128,25 +136,29 @@ namespace SG
             };
         }
 
-        GLint getCurrentVertexArrayBinding() {
+        GLint getCurrentVertexArrayBinding()
+        {
             GLint binding;
             glGetIntegerv(GL_VERTEX_ARRAY_BINDING, &binding);
             return binding;
         }
 
-        GLint getCurrentBufferBinding(GLenum target) {
+        GLint getCurrentBufferBinding(GLenum target)
+        {
             GLint binding;
             glGetIntegerv(target, &binding);
             return binding;
         }
 
-        GLint getCurrentProgram() {
+        GLint getCurrentProgram()
+        {
             GLint program;
             glGetIntegerv(GL_CURRENT_PROGRAM, &program);
             return program;
         }
 
-        void printGlBindings() {
+        void printGlBindings()
+        {
             LOGI("Bindings:\n  Vertex Array: %u\n  Array buffer: %u\n  Element Array buffer: %u\nProgram: %u\n",
                    getCurrentVertexArrayBinding(),
                    getCurrentBufferBinding(GL_ARRAY_BUFFER_BINDING),

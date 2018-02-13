@@ -45,17 +45,17 @@ bool Context::isWrapRSupported() const {
 #pragma mark - Programs
 
 shared_ptr<SG::Program>
-Context::loadProgram(const char* vertexShaderName,
-                     const char* fragmentShaderName)
+Context::loadProgram(const string& vertexShaderName,
+                     const string& fragmentShaderName)
 {
-    LOGI("loadProgram: %s, %s\n", vertexShaderName, fragmentShaderName);
+    LOGI("loadProgram: %s, %s\n", vertexShaderName.c_str(), fragmentShaderName.c_str());
     
     auto programSrc = readProgramSource(vertexShaderName, fragmentShaderName);
     if (!programSrc)
         return nullptr;
 
     auto program = make_shared<SG::GL::Program>(programSrc.value);
-    LOGI("program loaded: %s, %s\n", vertexShaderName, fragmentShaderName);
+    LOGI("program loaded: %s, %s\n", vertexShaderName.c_str(), fragmentShaderName.c_str());
     
     return program;
 }

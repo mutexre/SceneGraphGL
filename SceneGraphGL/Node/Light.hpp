@@ -7,8 +7,5 @@ namespace SG::GL
 {
     class Light : public SG::Light,
                   public Node
-    {
-    public:
-        Light();
-    };
+    {};
 }

@@ -7,8 +7,5 @@ namespace SG::GL
 {
     class Node : public virtual SG::Node,
                  public Object
-    {
-    public:
-        Node();
-    };
+    {};
 }

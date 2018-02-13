@@ -7,8 +7,5 @@ namespace SG::GL
 {
     class Camera : public SG::Camera,
                    public Node
-    {
-    public:
-        Camera();
-    };
+    {};
 }
