@@ -50,8 +50,6 @@
 		922D26451EA7F80A00453248 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		922D26461EA7F80A00453248 /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
 		922D26471EA7F80A00453248 /* SceneGraphGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SceneGraphGL.hpp; sourceTree = "<group>"; };
-		922D26491EA7F80A00453248 /* OffScreenBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OffScreenBuffer.cpp; sourceTree = "<group>"; };
-		922D264A1EA7F80A00453248 /* OffScreenBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OffScreenBuffer.hpp; sourceTree = "<group>"; };
 		922D264B1EA7F80A00453248 /* Renderbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderbuffer.cpp; sourceTree = "<group>"; };
 		922D264C1EA7F80A00453248 /* Renderbuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderbuffer.hpp; sourceTree = "<group>"; };
 		922D264D1EA7F80A00453248 /* ScreenBufferAndroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenBufferAndroid.cpp; sourceTree = "<group>"; };
@@ -156,8 +154,6 @@
 				922D26531EA7F80A00453248 /* Texture.cpp */,
 				922D264C1EA7F80A00453248 /* Renderbuffer.hpp */,
 				922D264B1EA7F80A00453248 /* Renderbuffer.cpp */,
-				922D264A1EA7F80A00453248 /* OffScreenBuffer.hpp */,
-				922D26491EA7F80A00453248 /* OffScreenBuffer.cpp */,
 				922D264F1EA7F80A00453248 /* ScreenbufferIOS.hpp */,
 				922D26501EA7F80A00453248 /* ScreenbufferIOS.mm */,
 				922D264E1EA7F80A00453248 /* ScreenBufferAndroid.hpp */,

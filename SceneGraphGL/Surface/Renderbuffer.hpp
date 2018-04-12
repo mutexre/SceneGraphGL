@@ -5,7 +5,7 @@
 
 namespace SG::GL
 {
-    class Renderbuffer : public virtual SG::Renderbuffer
+    class Renderbuffer : public SG::Renderbuffer
     {
     protected:
         GLuint renderbuffer;
