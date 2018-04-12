@@ -6,6 +6,8 @@
 #include <SceneGraphGL/SceneGraphGL.hpp>
 
 using namespace SG::GL;
+using namespace std;
+using namespace glm;
 
 bool Surface::checkFramebufferCompleteness(GLenum target) const {
     auto status = glCheckFramebufferStatus(target);

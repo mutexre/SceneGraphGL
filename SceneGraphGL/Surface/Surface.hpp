@@ -5,8 +5,7 @@
 
 namespace SG::GL
 {
-    class Surface : public SG::Surface,
-                    public Object
+    class Surface : public SG::Surface
     {
     protected:
         GLuint framebuffer;
@@ -30,13 +29,13 @@ namespace SG::GL
 
         virtual void attach(AttachmentPoint,
                             unsigned attachmentIndex,
-                            const shared_ptr<SG::Texture>&,
+                            const std::shared_ptr<SG::Texture>&,
                             unsigned level = 0,
                             unsigned cubeMapSide = 0) override;
 
         virtual void attach(AttachmentPoint,
                             unsigned attachmentIndex,
-                            const shared_ptr<SG::Renderbuffer>&) override;
+                            const std::shared_ptr<SG::Renderbuffer>&) override;
 
         virtual void detach(AttachmentPoint, unsigned attachmentIndex = 0) override;
 

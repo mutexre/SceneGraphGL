@@ -5,8 +5,7 @@
 
 namespace SG::GL
 {
-    class Renderbuffer : public virtual SG::Renderbuffer,
-                         public Object
+    class Renderbuffer : public virtual SG::Renderbuffer
     {
     protected:
         GLuint renderbuffer;
@@ -18,5 +17,9 @@ namespace SG::GL
         virtual void makeActive() override;
 
         GLuint getObjectId() const;
+        
+        virtual void allocStorage(int w, int h,
+                                  PixelFormat format,
+                                  int samples) override;
     };
 }

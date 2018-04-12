@@ -6,6 +6,8 @@
 #include <SceneGraphGL/SceneGraphGL.hpp>
 
 using namespace SG::GL;
+using namespace std;
+using namespace glm;
 
 Context::Context(OS os, API api, int majorVersion, int minorVersion)
     : SG::Context(os)
@@ -76,34 +78,6 @@ shared_ptr<SG::Scene> Context::createScene()
     return scene;
 }
 
-shared_ptr<SG::Node> Context::createNode()
-{
-    auto node = make_shared<GL::Node>();
-    node->setContext(shared_from_this());
-    return node;
-}
-
-shared_ptr<SG::MeshNode> Context::createMeshNode()
-{
-    auto node = make_shared<GL::MeshNode>();
-    node->setContext(shared_from_this());
-    return node;
-}
-
-shared_ptr<SG::Light> Context::createLight()
-{
-    auto light = make_shared<GL::Light>();
-    light->setContext(shared_from_this());
-    return light;
-}
-
-shared_ptr<SG::Camera> Context::createCamera()
-{
-    auto camera = make_shared<GL::Camera>();
-    camera->setContext(shared_from_this());
-    return camera;
-}
-
 shared_ptr<SG::Mesh> Context::createMesh()
 {
     auto mesh = make_shared<GL::Mesh>();
@@ -130,13 +104,6 @@ shared_ptr<SG::Renderbuffer> Context::createRenderbuffer()
     auto renderbuffer = make_shared<GL::Renderbuffer>();
     renderbuffer->setContext(shared_from_this());
     return renderbuffer;
-}
-
-shared_ptr<SG::OffScreenBuffer> Context::createOffScreenBuffer()
-{
-    auto screenbuffer = make_shared<GL::OffScreenBuffer>();
-    screenbuffer->setContext(shared_from_this());
-    return screenbuffer;
 }
 
 #pragma mark - Settings Fetch

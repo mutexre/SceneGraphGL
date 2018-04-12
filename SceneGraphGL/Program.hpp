@@ -5,19 +5,19 @@
 
 namespace SG::GL
 {
-    class Program : public SG::Program,
-                    public Object
+    class Program : public SG::Program
+//                    public Object
     {
     private:
         struct Uniform {
-            string name;
+            std::string name;
             GLuint location;
             GLenum type;
             GLint size;
         };
 
         struct Attrib {
-            string name;
+            std::string name;
             GLuint location;
             GLenum type;
             GLint size;
@@ -25,12 +25,12 @@ namespace SG::GL
 
     private:
         GLuint program;
-        map<string, Uniform> uniforms;
-        map<string, Attrib> attribs;
+        std::map<std::string, Uniform> uniforms;
+        std::map<std::string, Attrib> attribs;
 
     private:
         static const char* convertGlslShaderType(GLuint);
-        static GLuint compile(GLenum type, const string& source);
+        static GLuint compile(GLenum type, const std::string& source);
         static void link(GLuint id);
 
         void queryActiveAttributes();
@@ -48,48 +48,48 @@ namespace SG::GL
 
         virtual void bind() override;
 
-        virtual bool isVertexAttributeActive(const string&) override;
-        virtual bool isUniformActive(const string&) override;
+        virtual bool isVertexAttributeActive(const std::string&) override;
+        virtual bool isUniformActive(const std::string&) override;
 
-        virtual unsigned getVertexAttributeLocation(const string& name) override;
-        virtual unsigned getUniformLocation(const string& name) override;
+        virtual unsigned getVertexAttributeLocation(const std::string& name) override;
+        virtual unsigned getUniformLocation(const std::string& name) override;
 
-        virtual void set(const string &var, float) override;
-        virtual void set(const string &var, float, float) override;
-        virtual void set(const string &var, float, float, float) override;
-        virtual void set(const string &var, float, float, float, float) override;
-        virtual void set(const string &var, unsigned size, unsigned count, const float *) override;
+        virtual void set(const std::string &var, float) override;
+        virtual void set(const std::string &var, float, float) override;
+        virtual void set(const std::string &var, float, float, float) override;
+        virtual void set(const std::string &var, float, float, float, float) override;
+        virtual void set(const std::string &var, unsigned size, unsigned count, const float *) override;
 
-        virtual void set(const string &var, int) override;
-        virtual void set(const string &var, int, int) override;
-        virtual void set(const string &var, int, int, int) override;
-        virtual void set(const string &var, int, int, int, int) override;
-        virtual void set(const string &var, unsigned size, unsigned count, const int *) override;
+        virtual void set(const std::string &var, int) override;
+        virtual void set(const std::string &var, int, int) override;
+        virtual void set(const std::string &var, int, int, int) override;
+        virtual void set(const std::string &var, int, int, int, int) override;
+        virtual void set(const std::string &var, unsigned size, unsigned count, const int *) override;
 
-        virtual void set(const string &var, unsigned) override;
-        virtual void set(const string &var, unsigned, unsigned) override;
-        virtual void set(const string &var, unsigned, unsigned, unsigned) override;
-        virtual void set(const string &var, unsigned, unsigned, unsigned, unsigned) override;
-        virtual void set(const string &var, unsigned size, unsigned count, const unsigned *) override;
+        virtual void set(const std::string &var, unsigned) override;
+        virtual void set(const std::string &var, unsigned, unsigned) override;
+        virtual void set(const std::string &var, unsigned, unsigned, unsigned) override;
+        virtual void set(const std::string &var, unsigned, unsigned, unsigned, unsigned) override;
+        virtual void set(const std::string &var, unsigned size, unsigned count, const unsigned *) override;
 
-        virtual void set(const string &var, const mat2 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat3 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat4 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat2x3 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat3x2 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat2x4 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat4x2 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat3x4 &, bool transpose = false) override;
-        virtual void set(const string &var, const mat4x3 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat2 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat3 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat4 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat2x3 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat3x2 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat2x4 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat4x2 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat3x4 &, bool transpose = false) override;
+        virtual void set(const std::string &var, const glm::mat4x3 &, bool transpose = false) override;
 
-        virtual void set(const string &var, unsigned count, const mat2 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat3 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat4 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat2x3 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat3x2 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat2x4 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat4x2 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat3x4 *, bool transpose = false) override;
-        virtual void set(const string &var, unsigned count, const mat4x3 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat2 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat3 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat4 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat2x3 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat3x2 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat2x4 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat4x2 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat3x4 *, bool transpose = false) override;
+        virtual void set(const std::string &var, unsigned count, const glm::mat4x3 *, bool transpose = false) override;
     };
 }

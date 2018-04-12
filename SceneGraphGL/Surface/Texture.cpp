@@ -6,6 +6,8 @@
 #include <SceneGraphGL/SceneGraphGL.hpp>
 
 using namespace SG::GL;
+using namespace std;
+using namespace glm;
 
 Texture::Texture() {
     glGenTextures(1, &texture);
@@ -37,7 +39,8 @@ void Texture::setParameters()
     glTexParameterf(target, GL_TEXTURE_WRAP_S, convertWrap(wrap.s));
     glTexParameterf(target, GL_TEXTURE_WRAP_T, convertWrap(wrap.t));
     
-    if (isWrapRSupported())
+    auto glContext = static_cast<GL::Context*>(context.get());
+    if (glContext->isWrapRSupported())
         glTexParameterf(target, GL_TEXTURE_WRAP_R, convertWrap(wrap.r));
 
 #ifdef GL_TEXTURE_BORDER_COLOR
@@ -133,7 +136,8 @@ void Texture::setImage(const void* data,
 {
     GLint internalFormat;
     
-    if (isCoreProfileOrES3())
+    auto glContext = static_cast<GL::Context*>(context.get());
+    if (glContext->isCoreProfileOrES3())
         internalFormat = convertPixelFormat(format);
     else
         internalFormat = convertPixelFormatES2(format);

@@ -14,10 +14,12 @@ namespace SG::GL
     protected:
         void fetchMaxMSAASamples();
         
-        virtual shared_ptr<SG::Program> loadProgram(const string& vertexShaderName,
-                                                    const string& fragmentShaderName) override;
+        virtual std::shared_ptr<SG::Program>
+        loadProgram(const std::string& vertexShaderName,
+                    const std::string& fragmentShaderName) override;
         
-        virtual shared_ptr<SG::Program> cloneProgram(const char* name) override;
+        virtual std::shared_ptr<SG::Program>
+        cloneProgram(const char* name) override;
         
         Settings::CullFace fetchCullFaceSettings();
         Settings::Blend fetchBlendSettings();
@@ -36,16 +38,11 @@ namespace SG::GL
     
     #pragma mark - Factory Methods
     
-        virtual shared_ptr<SG::Scene> createScene() override;
-        virtual shared_ptr<SG::Node> createNode() override;
-        virtual shared_ptr<SG::MeshNode> createMeshNode() override;
-        virtual shared_ptr<SG::Light> createLight() override;
-        virtual shared_ptr<SG::Camera> createCamera() override;
-        virtual shared_ptr<SG::Mesh> createMesh() override;
-        virtual shared_ptr<SG::Texture> createTexture() override;
-        virtual shared_ptr<SG::Surface> createSurface() override;
-        virtual shared_ptr<SG::Renderbuffer> createRenderbuffer() override;
-        virtual shared_ptr<SG::OffScreenBuffer> createOffScreenBuffer() override;
+        virtual std::shared_ptr<SG::Scene> createScene() override;
+        virtual std::shared_ptr<SG::Mesh> createMesh() override;
+        virtual std::shared_ptr<SG::Texture> createTexture() override;
+        virtual std::shared_ptr<SG::Surface> createSurface() override;
+        virtual std::shared_ptr<SG::Renderbuffer> createRenderbuffer() override;
         
     #pragma mark - Settings Fetch
     
@@ -60,7 +57,7 @@ namespace SG::GL
         virtual bool applySmoothPointsSettings(bool) override;
         virtual bool applyCullFaceSettings(const Settings::CullFace&) override;
         virtual bool applyBlendSettings(const Settings::Blend&) override;
-        virtual bool applyViewportSettings(ivec4) override;
+        virtual bool applyViewportSettings(glm::ivec4) override;
         virtual bool applyScissorSettings(const Settings::Scissor&) override;
         virtual bool applyColorMaskSettings(const Settings::ColorMask&) override;
     };

@@ -36,18 +36,12 @@ namespace SG::GL
 #include <SceneGraphGL/Types.hpp>
 #include <SceneGraphGL/Helper.hpp>
 #include <SceneGraphGL/Context.hpp>
-#include <SceneGraphGL/Object.hpp>
 #include <SceneGraphGL/Texture.hpp>
 #include <SceneGraphGL/Scene.hpp>
-#include <SceneGraphGL/Node.hpp>
-#include <SceneGraphGL/MeshNode.hpp>
-#include <SceneGraphGL/Light.hpp>
-#include <SceneGraphGL/Camera.hpp>
 #include <SceneGraphGL/Mesh.hpp>
 #include <SceneGraphGL/Program.hpp>
 #include <SceneGraphGL/Surface.hpp>
 #include <SceneGraphGL/Renderbuffer.hpp>
-#include <SceneGraphGL/OffScreenBuffer.hpp>
 #include <SceneGraphGL/TextureMaterialYUV.hpp>
 
 #if defined(__APPLE__) && defined(__OBJC__)

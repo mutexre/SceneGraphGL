@@ -5,8 +5,7 @@
 
 namespace SG::GL
 {
-    class Texture : public SG::Texture,
-                    public Object
+    class Texture : public SG::Texture
     {
     private:
         GLuint texture;
@@ -22,12 +21,12 @@ namespace SG::GL
         static GLint convertWrap(Wrap);
 
     protected:
-        virtual void setImages(const vector<shared_ptr<Image>> &) override;
-        virtual void setImages(const vector<shared_ptr<ImageStack>> &) override;
+        virtual void setImages(const std::vector<std::shared_ptr<Image>> &) override;
+        virtual void setImages(const std::vector<std::shared_ptr<ImageStack>> &) override;
 
-        void setImage(unsigned level, PixelFormat, const shared_ptr<Image> &);
-        void setImage(unsigned level, const shared_ptr<Image> &);
-        void setCubemapImage(unsigned side, unsigned level, const shared_ptr<Image> &);
+        void setImage(unsigned level, PixelFormat, const std::shared_ptr<Image> &);
+        void setImage(unsigned level, const std::shared_ptr<Image> &);
+        void setCubemapImage(unsigned side, unsigned level, const std::shared_ptr<Image> &);
 
         void setParameters();
 

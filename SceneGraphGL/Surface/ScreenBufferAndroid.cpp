@@ -2,7 +2,7 @@
 // Created by Sergey Vasilenko on 25.10.16.
 //
 
-#include "ScreenBufferAndroid.hpp"
+#include <SceneGraphGL/SceneGraphGL.hpp>
 
 using namespace SG::GL;
 

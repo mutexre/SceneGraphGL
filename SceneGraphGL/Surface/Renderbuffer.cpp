@@ -22,3 +22,18 @@ void Renderbuffer::makeActive() {
 GLuint Renderbuffer::getObjectId() const {
     return renderbuffer;
 }
+
+void Renderbuffer::allocStorage(int w, int h, PixelFormat format, int samples)
+{
+    GLint currentRenderbuffer;
+    glGetIntegerv(GL_RENDERBUFFER_BINDING, &currentRenderbuffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, renderbuffer);
+    
+    GLenum glFormat = Texture::convertPixelFormat(format);
+    if (samples < 2)
+        glRenderbufferStorage(GL_RENDERBUFFER, glFormat, w, h);
+    else
+        glRenderbufferStorageMultisample(GL_RENDERBUFFER, samples, glFormat, w, h);
+
+    glBindRenderbuffer(GL_RENDERBUFFER, currentRenderbuffer);
+}

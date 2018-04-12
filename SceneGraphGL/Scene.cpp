@@ -6,6 +6,8 @@
 #include <SceneGraphGL/SceneGraphGL.hpp>
 
 using namespace SG::GL;
+using namespace std;
+using namespace glm;
 
 Scene::Scene(const shared_ptr<SG::Context>& context) : SG::Scene(context)
 {}

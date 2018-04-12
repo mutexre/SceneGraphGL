@@ -15,15 +15,11 @@
 		922D26671EA7F80A00453248 /* TextureMaterialYUV.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D263A1EA7F80A00453248 /* TextureMaterialYUV.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D26681EA7F80A00453248 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D263B1EA7F80A00453248 /* Mesh.cpp */; };
 		922D26691EA7F80A00453248 /* Mesh.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D263C1EA7F80A00453248 /* Mesh.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		922D266E1EA7F80A00453248 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D26411EA7F80A00453248 /* Object.cpp */; };
-		922D266F1EA7F80A00453248 /* Object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D26421EA7F80A00453248 /* Object.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D26701EA7F80A00453248 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D26431EA7F80A00453248 /* Program.cpp */; };
 		922D26711EA7F80A00453248 /* Program.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D26441EA7F80A00453248 /* Program.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D26721EA7F80A00453248 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D26451EA7F80A00453248 /* Scene.cpp */; };
 		922D26731EA7F80A00453248 /* Scene.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D26461EA7F80A00453248 /* Scene.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D26741EA7F80A00453248 /* SceneGraphGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D26471EA7F80A00453248 /* SceneGraphGL.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		922D26751EA7F80A00453248 /* OffScreenBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D26491EA7F80A00453248 /* OffScreenBuffer.cpp */; };
-		922D26761EA7F80A00453248 /* OffScreenBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D264A1EA7F80A00453248 /* OffScreenBuffer.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D26771EA7F80A00453248 /* Renderbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 922D264B1EA7F80A00453248 /* Renderbuffer.cpp */; };
 		922D26781EA7F80A00453248 /* Renderbuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D264C1EA7F80A00453248 /* Renderbuffer.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D267B1EA7F80A00453248 /* ScreenbufferIOS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D264F1EA7F80A00453248 /* ScreenbufferIOS.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,10 +32,6 @@
 		922D26C41EA8E84200453248 /* Platform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D26C31EA8E84200453248 /* Platform.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		922D272B1EA910E000453248 /* SceneGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D272A1EA910E000453248 /* SceneGraph.framework */; };
 		922D27311EA924E500453248 /* SceneGraphGL Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 922D272F1EA924E500453248 /* SceneGraphGL Framework.h */; };
-		922D2E731EAB538C00453248 /* Camera.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D2E6B1EAB538C00453248 /* Camera.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		922D2E751EAB538C00453248 /* Light.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D2E6D1EAB538C00453248 /* Light.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		922D2E771EAB538C00453248 /* MeshNode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D2E6F1EAB538C00453248 /* MeshNode.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		922D2E791EAB538C00453248 /* Node.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922D2E711EAB538C00453248 /* Node.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		92D44D931F8B1CDF005204DB /* Types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 92D44D921F8B1CDF005204DB /* Types.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,8 +45,6 @@
 		922D263A1EA7F80A00453248 /* TextureMaterialYUV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextureMaterialYUV.hpp; sourceTree = "<group>"; };
 		922D263B1EA7F80A00453248 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
 		922D263C1EA7F80A00453248 /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
-		922D26411EA7F80A00453248 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
-		922D26421EA7F80A00453248 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
 		922D26431EA7F80A00453248 /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
 		922D26441EA7F80A00453248 /* Program.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Program.hpp; sourceTree = "<group>"; };
 		922D26451EA7F80A00453248 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
@@ -83,10 +73,6 @@
 		922D272A1EA910E000453248 /* SceneGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneGraph.framework; path = "../../../Library/Developer/Xcode/DerivedData/SG-cvyaihnwxcrjzzdttabsjgcbxcch/Build/Products/Debug/SceneGraph.framework"; sourceTree = "<group>"; };
 		922D272E1EA924E500453248 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		922D272F1EA924E500453248 /* SceneGraphGL Framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SceneGraphGL Framework.h"; sourceTree = "<group>"; };
-		922D2E6B1EAB538C00453248 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
-		922D2E6D1EAB538C00453248 /* Light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Light.hpp; sourceTree = "<group>"; };
-		922D2E6F1EAB538C00453248 /* MeshNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeshNode.hpp; sourceTree = "<group>"; };
-		922D2E711EAB538C00453248 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		92D44D921F8B1CDF005204DB /* Types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Types.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +118,6 @@
 		922D26291EA7F80A00453248 /* SceneGraphGL */ = {
 			isa = PBXGroup;
 			children = (
-				922D2E4F1EAA428000453248 /* Node */,
 				922D26481EA7F80A00453248 /* Surface */,
 				922D26381EA7F80A00453248 /* Material */,
 				922D26901EA7F94300453248 /* Debug */,
@@ -141,8 +126,6 @@
 				92D44D921F8B1CDF005204DB /* Types.hpp */,
 				922D262D1EA7F80A00453248 /* Context.hpp */,
 				922D262C1EA7F80A00453248 /* Context.cpp */,
-				922D26421EA7F80A00453248 /* Object.hpp */,
-				922D26411EA7F80A00453248 /* Object.cpp */,
 				922D26461EA7F80A00453248 /* Scene.hpp */,
 				922D26451EA7F80A00453248 /* Scene.cpp */,
 				922D263C1EA7F80A00453248 /* Mesh.hpp */,
@@ -215,17 +198,6 @@
 			path = Platform/Apple;
 			sourceTree = SOURCE_ROOT;
 		};
-		922D2E4F1EAA428000453248 /* Node */ = {
-			isa = PBXGroup;
-			children = (
-				922D2E711EAB538C00453248 /* Node.hpp */,
-				922D2E6B1EAB538C00453248 /* Camera.hpp */,
-				922D2E6D1EAB538C00453248 /* Light.hpp */,
-				922D2E6F1EAB538C00453248 /* MeshNode.hpp */,
-			);
-			path = Node;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -236,12 +208,7 @@
 				922D26741EA7F80A00453248 /* SceneGraphGL.hpp in Headers */,
 				922D26C41EA8E84200453248 /* Platform.hpp in Headers */,
 				922D265C1EA7F80A00453248 /* Context.hpp in Headers */,
-				922D266F1EA7F80A00453248 /* Object.hpp in Headers */,
 				922D26731EA7F80A00453248 /* Scene.hpp in Headers */,
-				922D2E791EAB538C00453248 /* Node.hpp in Headers */,
-				922D2E731EAB538C00453248 /* Camera.hpp in Headers */,
-				922D2E751EAB538C00453248 /* Light.hpp in Headers */,
-				922D2E771EAB538C00453248 /* MeshNode.hpp in Headers */,
 				92D44D931F8B1CDF005204DB /* Types.hpp in Headers */,
 				922D26711EA7F80A00453248 /* Program.hpp in Headers */,
 				922D27311EA924E500453248 /* SceneGraphGL Framework.h in Headers */,
@@ -250,7 +217,6 @@
 				922D267E1EA7F80A00453248 /* Surface.hpp in Headers */,
 				922D26801EA7F80A00453248 /* Texture.hpp in Headers */,
 				922D26781EA7F80A00453248 /* Renderbuffer.hpp in Headers */,
-				922D26761EA7F80A00453248 /* OffScreenBuffer.hpp in Headers */,
 				922D267B1EA7F80A00453248 /* ScreenbufferIOS.hpp in Headers */,
 				922D26671EA7F80A00453248 /* TextureMaterialYUV.hpp in Headers */,
 				922D26961EA7F97E00453248 /* DebugHelper.hpp in Headers */,
@@ -326,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				922D265B1EA7F80A00453248 /* Context.cpp in Sources */,
-				922D266E1EA7F80A00453248 /* Object.cpp in Sources */,
 				922D26721EA7F80A00453248 /* Scene.cpp in Sources */,
 				922D26681EA7F80A00453248 /* Mesh.cpp in Sources */,
 				922D26701EA7F80A00453248 /* Program.cpp in Sources */,
@@ -334,7 +299,6 @@
 				922D267D1EA7F80A00453248 /* Surface.cpp in Sources */,
 				922D267F1EA7F80A00453248 /* Texture.cpp in Sources */,
 				922D26771EA7F80A00453248 /* Renderbuffer.cpp in Sources */,
-				922D26751EA7F80A00453248 /* OffScreenBuffer.cpp in Sources */,
 				922D267C1EA7F80A00453248 /* ScreenbufferIOS.mm in Sources */,
 				922D26661EA7F80A00453248 /* TextureMaterialYUV.cpp in Sources */,
 			);
@@ -365,7 +329,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -414,6 +378,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++1z",
+				);
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
 					"-framework",
 					OpenGLES,
@@ -443,7 +411,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -485,6 +453,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++1z",
+				);
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
 					"-framework",
 					OpenGLES,
