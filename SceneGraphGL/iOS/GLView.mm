@@ -6,8 +6,8 @@
 //
 //
 
-#import <SceneGraphGL/SceneGraphGL.hpp>
 #import <OpenGL/OpenGL.h>
+#import <SceneGraphGL/SceneGraphGL.hpp>
 #import "GLView.hpp"
 
 using namespace std;

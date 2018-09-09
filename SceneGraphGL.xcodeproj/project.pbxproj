@@ -65,6 +65,7 @@
 		9268393B214568FE00D02D09 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268393A214568FE00D02D09 /* AppKit.framework */; };
 		9268393D2145690500D02D09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268393C2145690500D02D09 /* CoreGraphics.framework */; };
 		92683943214586F800D02D09 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92683942214586F800D02D09 /* CoreVideo.framework */; };
+		92683944214592B500D02D09 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D26BF1EA8089800453248 /* OpenGL.framework */; };
 		92D44D931F8B1CDF005204DB /* Types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 92D44D921F8B1CDF005204DB /* Types.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92683944214592B500D02D09 /* OpenGL.framework in Frameworks */,
 				92683943214586F800D02D09 /* CoreVideo.framework in Frameworks */,
 				9268393D2145690500D02D09 /* CoreGraphics.framework in Frameworks */,
 				9268393B214568FE00D02D09 /* AppKit.framework in Frameworks */,
