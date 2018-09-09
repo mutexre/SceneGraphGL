@@ -45,7 +45,7 @@ bool ScreenbufferIOS::bindStorage(EAGLContext* context, id<EAGLDrawable> drawabl
 
 void ScreenbufferIOS::present(EAGLContext* context)
 {
-    makeActive()
+    makeActive();
     context.present(GL_RENDERBUFFER);
 }
 

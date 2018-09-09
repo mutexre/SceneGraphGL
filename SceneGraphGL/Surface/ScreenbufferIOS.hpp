@@ -15,6 +15,6 @@ namespace SG::GL
     public:
         ScreenbufferIOS();
         bool bindStorage(EAGLContext*, id<EAGLDrawable>);
-        void present();
+        void present(EAGLContext*);
     };
 }
