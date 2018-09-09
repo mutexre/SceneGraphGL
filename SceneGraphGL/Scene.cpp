@@ -13,7 +13,9 @@ Scene::Scene(const shared_ptr<SG::Context>& context) : SG::Scene(context)
 {}
 
 void Scene::init()
-{}
+{
+    root = context->createNode("root");
+}
 
 void Scene::setLightsOnGPU(const shared_ptr<SG::Program>& program, const mat4& viewMatrix)
 {
