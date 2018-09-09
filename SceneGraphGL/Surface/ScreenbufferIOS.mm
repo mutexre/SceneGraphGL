@@ -8,6 +8,7 @@
 #include <SceneGraphGL/SceneGraphGL.hpp>
 
 using namespace SG::GL;
+using namespace glm;
 
 ScreenbufferIOS::ScreenbufferIOS() {
     format = PixelFormat::rgba8;
@@ -40,6 +41,12 @@ bool ScreenbufferIOS::bindStorage(EAGLContext* context, id<EAGLDrawable> drawabl
     glBindRenderbuffer(GL_RENDERBUFFER, currentRenderbuffer);
     
     return true;
+}
+
+void ScreenbufferIOS::present(EAGLContext* context)
+{
+    makeActive()
+    context.present(GL_RENDERBUFFER);
 }
 
 #endif

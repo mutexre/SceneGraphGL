@@ -10,10 +10,11 @@ namespace SG::GL
     class ScreenbufferIOS : public Renderbuffer
     {
     private:
-        uvec2 fetchSize() const;
+        glm::uvec2 fetchSize() const;
     
     public:
         ScreenbufferIOS();
         bool bindStorage(EAGLContext*, id<EAGLDrawable>);
+        void present();
     };
 }
