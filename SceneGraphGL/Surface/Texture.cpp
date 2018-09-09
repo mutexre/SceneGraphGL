@@ -57,8 +57,6 @@ void Texture::init(Texture::Type type, PixelFormat format)
 
 void Texture::setImages(const vector<shared_ptr<Image>>& images)
 {
-//    init();
-    
     switch (type)
     {
         case Type::t1d:

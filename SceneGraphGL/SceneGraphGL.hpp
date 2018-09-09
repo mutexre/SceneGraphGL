@@ -46,8 +46,8 @@ namespace SG::GL
 
 #if defined(__APPLE__) && defined(__OBJC__)
     #if TARGET_OS_IPHONE || TARGET_OS_SIMULATOR
-        #include <SceneGraphGL/Surface/ScreenbufferIOS.hpp>
+        #include <SceneGraphGL/ScreenbufferIOS.hpp>
     #endif
 #elif defined(__ANDROID__)
-    #include <SceneGraphGL/Surface/ScreenBufferAndroid.hpp>
+    #include <SceneGraphGL/ScreenBufferAndroid.hpp>
 #endif
