@@ -6,7 +6,6 @@
 //
 //
 
-#import <OpenGL/OpenGL.h>
 #import <SceneGraphGL/SceneGraphGL.hpp>
 #import "GLView.hpp"
 
